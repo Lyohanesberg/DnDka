@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DEFAULT: DARK FANTASY */
+    --c-bg-deep: #0c0a09;    /* stone-950 */
+    --c-bg-main: #1c1917;    /* stone-900 */
+    --c-bg-card: #292524;    /* stone-800 */
+    --c-border: #44403c;     /* stone-700 */
+    --c-border-hover: #57534e; /* stone-600 */
+    --c-text-muted: #78716c; /* stone-500 */
+    --c-text-secondary: #a8a29e; /* stone-400 */
+    --c-text-primary: #d6d3d1;   /* stone-300 */
+    --c-text-bright: #e7e5e4;    /* stone-200 */
+
+    --c-accent-dark: #78350f;   /* amber-900 */
+    --c-accent-dim: #92400e;    /* amber-800 */
+    --c-accent-main: #b45309;   /* amber-700 */
+    --c-accent-bright: #f59e0b; /* amber-500 */
+  }
+
+  .theme-parchment {
+    --c-bg-deep: #e8e4d9;       
+    --c-bg-main: #f5f2e6;       
+    --c-bg-card: #eaddcf;       
+    --c-border: #bcaaa4;        
+    --c-border-hover: #8d6e63;
+    --c-text-muted: #8d6e63;    
+    --c-text-secondary: #5d4037; 
+    --c-text-primary: #3e2723;   
+    --c-text-bright: #261613;    
+
+    --c-accent-dark: #d7ccc8;    
+    --c-accent-dim: #a1887f;     
+    --c-accent-main: #5d4037;    
+    --c-accent-bright: #8d6e63;  
+  }
+
+  .theme-scifi {
+    --c-bg-deep: #020617;     
+    --c-bg-main: #0f172a;     
+    --c-bg-card: #1e293b;     
+    --c-border: #334155;      
+    --c-border-hover: #475569;
+    --c-text-muted: #64748b;
+    --c-text-secondary: #94a3b8;
+    --c-text-primary: #cbd5e1;
+    --c-text-bright: #f8fafc;
+
+    --c-accent-dark: #0e7490;    
+    --c-accent-dim: #0891b2;     
+    --c-accent-main: #06b6d4;    
+    --c-accent-bright: #22d3ee;  
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--c-bg-deep);
+    color: var(--c-text-bright);
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .theme-parchment {
+     font-family: 'Tangerine', serif; 
+     font-size: 1.1rem;
+  }
+  .theme-parchment h1, .theme-parchment h2, .theme-parchment h3, .theme-parchment .fantasy-font {
+     font-family: 'Cinzel', serif;
+     color: #3e2723;
+  }
+  .theme-parchment .font-sans {
+     font-family: 'Lato', sans-serif;
+  }
+
+  .theme-scifi {
+     font-family: 'Lato', sans-serif;
+  }
+  .theme-scifi h1, .theme-scifi h2, .theme-scifi h3, .theme-scifi .fantasy-font {
+     font-family: 'Orbitron', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+  }
+
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--c-bg-card); 
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--c-border); 
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--c-border-hover); 
+  }
+}

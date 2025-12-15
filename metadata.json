@@ -1,0 +1,7 @@
+{
+  "name": "Copy of AI Dungeon Master (UA)",
+  "description": "Імерсивна D&D 5e кампанія з ШІ у ролі Майстра Підземель. Створіть персонажа, кидайте кубики та пориньте у пригоду українською мовою.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
